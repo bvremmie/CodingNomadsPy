@@ -17,3 +17,19 @@ Another example: if input is 3, you will output
 Hint: Think of nested for loops
 
 '''
+
+num = int(input("Give me a number: "))
+star = '*'
+
+# n = 0
+# while n < num:
+#     for n in range(1, num+1):
+#         print("*")
+#         n += 1
+
+
+for n in range(1, num+1):
+    if n != num+1:
+        print(star)
+        n += 1
+        star += '*'

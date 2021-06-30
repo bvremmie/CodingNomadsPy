@@ -7,3 +7,9 @@ Write a script that reads in the words from the words.txt file and finds and pri
 
 
 '''
+
+with open("words.txt", "r") as fin:
+    words = fin.readlines()
+    print(min(words, key=len))
+    print(max(words, key=len))
+    print(len(words))

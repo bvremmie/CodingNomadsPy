@@ -7,3 +7,26 @@ Example input:  1,2,3,4,5,6,7,8,9,10
 Example output: 2,4,6,8,10,9,7,5,3,1
 
 '''
+
+#get numbers from user
+inputList = []
+nums = input("Give me 10 numbers separated by commas: ")
+#print(nums)
+#print(inputList)
+
+listt = nums.split(",") #split string by commas
+print(listt)
+print(nums)
+
+print(type(nums))
+print(listt[1])
+
+#
+# index = 2
+# #while index
+# for num in listt:
+#     if index < 20:
+#         print(listt[index])
+#         index += 4
+#     # else:
+#     #     print(list[index-4])
