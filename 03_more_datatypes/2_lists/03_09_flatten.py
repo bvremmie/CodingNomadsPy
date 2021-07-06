@@ -13,3 +13,9 @@ to flatten a list of any depth. Can you understand the code used?
 '''
 
 starting_list = [[1, 2, 3, 4], [5, 6], [7, 8, 9]]
+
+flat_list = []
+for sublist in starting_list:
+    for item in sublist:
+        flat_list.append(item)
+print(flat_list)

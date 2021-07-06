@@ -10,5 +10,13 @@ come back to this task after you have learned about loops)
 
 '''
 
-numbers = input("Give me a 10 numbers, separated by commas.")
-print
+nums = input("Give me a 10 numbers, separated by commas: ")
+nums = nums.split(",")
+
+num = []
+for n in nums:
+    num.append(int(n))
+print(max(num))
+
+for n in nums:
+    

@@ -15,18 +15,20 @@ nums = input("Give me 10 numbers separated by commas: ")
 #print(inputList)
 
 listt = nums.split(",") #split string by commas
-print(listt)
-print(nums)
+#print(listt)
 
-print(type(nums))
-print(listt[1])
+newnew = []
+index = 1
+#while index
+for num in listt:
+    if index < 10:
+        newnew.append(int(listt[index]))
+        index += 2
 
-#
-# index = 2
-# #while index
-# for num in listt:
-#     if index < 20:
-#         print(listt[index])
-#         index += 4
-#     # else:
-#     #     print(list[index-4])
+i = 8
+for num in listt:
+    if i > -1:
+        newnew.append(int(listt[i]))
+        i -= 2
+
+print(newnew)
