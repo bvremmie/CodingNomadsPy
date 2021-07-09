@@ -17,6 +17,3 @@ num = []
 for n in nums:
     num.append(int(n))
 print(max(num))
-
-for n in nums:
-    

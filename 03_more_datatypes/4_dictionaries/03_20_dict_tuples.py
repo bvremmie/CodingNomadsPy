@@ -10,3 +10,13 @@ NOTE: Check out the Python docs and see whether you can come up with a solution,
       Feel free to discuss any questions you have with your mentor and on the forum!
 
 '''
+
+dict = {"item1": 5, "item2": 6, "item3": 1}
+
+newlist = []
+for k,v in dict.items():
+#    print(tuple((k,v)))
+    newlist.append((tuple((k,v))))
+
+newlist = sorted(newlist, key=lambda student: student[1])
+print(newlist)
