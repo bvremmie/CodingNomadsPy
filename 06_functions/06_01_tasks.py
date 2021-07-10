@@ -14,3 +14,26 @@ Write a script that completes the following tasks.
 
 # print your new variables to display the results
 
+def or_boolean(n):
+        if n % 4 == 0 or n % 7 == 0:
+            return True
+        else:
+            return False
+
+
+def and_boolean(n):
+    if n % 4 == 0 and n % 7 == 0:
+        return True
+    else:
+        return False
+
+
+
+input = int(input("Give me a number between 1 and 1,000,000,000: "))
+print(f"Input: {input}")
+
+orResult = or_boolean(input)
+print(f"{input} is divisible by 4 OR 7: {orResult}")
+
+andResult = and_boolean(input)
+print(f"{input} is divisible by 4 AND 7: {andResult}")
