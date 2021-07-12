@@ -28,6 +28,9 @@ class Car:
         self.year = year
         self.speed = speed
 
+    def __str__(self):
+        return f"{self.model}, {self.year}, {self.speed}"
+
     def accelerate(self):
         """"add 5 to speed"""
         self.speed += 5
@@ -44,4 +47,4 @@ class Car:
         return f"{self.model} goes 'beep beep'"
 
 my_car = Car("Toyota", 1975)
-print(my_car.speed)
+print(my_car)
