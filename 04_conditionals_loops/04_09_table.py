@@ -8,22 +8,15 @@ Use a loop to print the following table to the console:
  40 41 42 43 44 45 46 47 48 49
 
 '''
-#if i < 10:
 
-#n = 10
-#for i in range(0, 50):
-for p in range(0, 10):
-    print(p, end = ' ')
-print('\n')
-for q in range(10, 20):
-    print(q, end = ' ')
-print('\n')
-for r in range(20, 30):
-    print(r, end=' ')
-print('\n')
-for s in range(30, 40):
-    print(s, end=' ')
-print('\n')
-for t in range(40, 50):
-    print(t, end=' ')
-print('\n')
+
+numbers = ""
+j = 0
+for i in range(50):
+     numbers += str(i) + ' '
+     if j == 9:
+        print(numbers)
+        numbers = ""
+        j = 0
+     else:
+        j += 1

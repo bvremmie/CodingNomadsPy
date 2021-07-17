@@ -32,8 +32,7 @@ class RomCom(Movie):
 
 class ActionMovie(Movie):
     def __init__(self, year, title, pg=13):
-        self.year = year
-        self.title = title
+        super().__init__(year, title)
         self.pg = pg
 
 
