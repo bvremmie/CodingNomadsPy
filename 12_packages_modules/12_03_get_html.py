@@ -9,3 +9,8 @@ TIP:
     very common. head over to SO and find a solution!
 
 '''
+
+import requests
+#import BeautifulSoup
+r = requests.get('https://codingnomads.com/')
+print(r.text.encode('utf-8'))

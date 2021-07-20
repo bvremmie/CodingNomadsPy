@@ -8,7 +8,6 @@ with open("words.txt", "r") as fin:
     words = fin.readlines()
 
 
-if
 
 # with open("words_reverse.txt", "w") as fout:
 #     fin.writelines():
